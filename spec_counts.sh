@@ -16,7 +16,7 @@ do
 
   RUNNING=$(echo $OUTPUT | cut -d ' ' -f 1)
   SKIPPED=$(echo $OUTPUT | cut -d ' ' -f 5)
-  NOW=$(date +'%Y-%m-%d')
+  NOW=$(date +'%m/%d/%Y')
   cd ../spec_counts
   printf "$REPO, $RUNNING, $SKIPPED, $NOW\n" >> $FILE_NAME
 done
